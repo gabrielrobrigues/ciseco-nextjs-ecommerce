@@ -137,15 +137,15 @@ const SectionHero2: FC<SectionHero2Props> = ({ className = "" }) => {
             className={`relative z-[1] w-full max-w-3xl space-y-8 sm:space-y-14 nc-SectionHero2Item__left`}
           >
             <div className="space-y-5 sm:space-y-6">
-              <span className="nc-SectionHero2Item__subheading block text-base md:text-xl text-slate-700 font-medium">
+              <span className="nc-SectionHero2Item__subheading block text-base md:text-lg text-slate-700 font-medium">
                 {item.subHeading}
               </span>
-              <h2 className="nc-SectionHero2Item__heading font-semibold text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl !leading-[114%] text-slate-900">
+              <h2 className="nc-SectionHero2Item__heading font-semibold text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-5xl text-slate-900" style={{marginTop: 8}}>
                 {item.heading}
               </h2>
             </div>
 
-            <ButtonPrimary
+            {/* <ButtonPrimary
               className="nc-SectionHero2Item__button dark:bg-slate-900"
               sizeClass="py-3 px-6 sm:py-5 sm:px-9"
               href={item.btnLink}
@@ -169,9 +169,9 @@ const SectionHero2: FC<SectionHero2Props> = ({ className = "" }) => {
                   />
                 </svg>
               </span>
-            </ButtonPrimary>
+            </ButtonPrimary> */}
           </div>
-          <div className="mt-10 lg:mt-0 lg:absolute end-0 rtl:-end-28 bottom-0 top-0 w-full max-w-2xl xl:max-w-3xl 2xl:max-w-4xl">
+          <div className="mt-10 my-10 lg:absolute end-0 rtl:-end-28 bottom-0 top-0 w-full max-w-2xl xl:max-w-3xl 2xl:max-w-4xl max-md:opacity-60">
             <Image
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

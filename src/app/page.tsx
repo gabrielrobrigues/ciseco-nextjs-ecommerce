@@ -22,10 +22,6 @@ function PageHome() {
     <div className="nc-PageHome relative overflow-hidden">
       <SectionHero2 />
 
-      <div className="mt-24 lg:mt-32">
-        <DiscoverMoreSlider />
-      </div>
-
       <div className="container relative space-y-24 my-24 lg:space-y-32 lg:my-32">
         <SectionSliderProductCard
           data={[
@@ -37,27 +33,11 @@ function PageHome() {
           ]}
         />
 
-        <SectionPromo1 />
-
-        <div className="relative py-24 lg:py-32">
-          <BackgroundSection />
-          <SectionGridMoreExplore />
-        </div>
-
+      
         <SectionSliderProductCard
           heading="Best Sellers"
           subHeading="Best selling of the month"
         />
-
-        <SectionPromo2 />
-
-        <SectionSliderLargeProduct cardStyle="style2" />
-
-        <SectionSliderCategories />
-
-        <SectionPromo3 />
-
-        <SectionGridFeatureItems />
 
         <div className="relative py-24 lg:py-32">
           <BackgroundSection />

@@ -22,8 +22,8 @@ export const HERO2_DEMO_DATA: Hero2DataType[] = [
   },
   {
     image: `https://i.pinimg.com/originals/83/a4/e0/83a4e0d8189258e54afe1e58db3764b0.png`,
-    heading: "final de semana incrível! ε(´｡•᎑•`)っ 💕",
-    subHeading: "Escolha as atrações do nosso",
+    heading: "final de semana incrível!",
+    subHeading: "Escolha as atrações do nosso ε(´｡•᎑•`)っ 💕",
     btnText: "Explorar",
     btnLink: "/",
   },
