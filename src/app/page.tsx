@@ -37,9 +37,6 @@ function PageHome() {
           ]}
         />
 
-        <div className="py-24 lg:py-32 border-t border-b border-slate-200 dark:border-slate-700">
-          <SectionHowItWork />
-        </div>
         <SectionPromo1 />
 
         <div className="relative py-24 lg:py-32">

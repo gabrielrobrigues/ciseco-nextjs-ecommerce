@@ -180,37 +180,37 @@ const OTHER_PAGE_CHILD: NavItemType[] = [
 export const NAVIGATION_DEMO_2: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "/collection",
-    name: "Men",
+    href: "https://www.instagram.com/gabriel_torresr/",
+    name: "Gabriel",
   },
   {
     id: ncNanoId(),
-    href: "/collection-2",
-    name: "Women",
+    href: "https://www.instagram.com/hen.thay/",
+    name: "Thay (linda e maravilhosa)",
   },
   {
     id: ncNanoId(),
-    href: "/collection",
-    name: "Beauty",
+    href: "https://www.youtube.com/shorts/dtHOWcUtjgI",
+    name: "Nós <3",
   },
 
-  {
-    id: ncNanoId(),
-    href: "/collection-2",
-    name: "Sport",
-  },
-  {
-    id: ncNanoId(),
-    href: "/collection",
-    name: "Templates",
-    type: "megaMenu",
-    children: MEGAMENU_TEMPLATES,
-  },
-  {
-    id: ncNanoId(),
-    href: "/search",
-    name: "Explore",
-    type: "dropdown",
-    children: OTHER_PAGE_CHILD,
-  },
+  // {
+  //   id: ncNanoId(),
+  //   href: "/collection-2",
+  //   name: "Sport",
+  // },
+  // {
+  //   id: ncNanoId(),
+  //   href: "/collection",
+  //   name: "Templates",
+  //   type: "megaMenu",
+  //   children: MEGAMENU_TEMPLATES,
+  // },
+  // {
+  //   id: ncNanoId(),
+  //   href: "/search",
+  //   name: "Explore",
+  //   type: "dropdown",
+  //   children: OTHER_PAGE_CHILD,
+  // },
 ];

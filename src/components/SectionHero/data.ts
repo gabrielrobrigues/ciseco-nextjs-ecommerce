@@ -14,24 +14,24 @@ interface Hero2DataType {
 
 export const HERO2_DEMO_DATA: Hero2DataType[] = [
   {
-    image: imageRightPng2,
-    heading: "Exclusive collection for everyone",
-    subHeading: "In this season, find the best 🔥",
-    btnText: "Explore now",
+    image: `https://static.wikia.nocookie.net/pixar/images/a/ad/Cars_Lighting_Mcqueen.png/revision/latest?cb=20191025194603&path-prefix=pt-br`,
+    heading: "das nossas vidas 🎀",
+    subHeading: "Se prepare para a primeira viagem",
+    btnText: "Explorar",
     btnLink: "/",
   },
   {
-    image: imageRightPng3,
-    heading: "Exclusive collection for everyone",
-    subHeading: "In this season, find the best 🔥",
-    btnText: "Explore now",
+    image: `https://i.pinimg.com/originals/83/a4/e0/83a4e0d8189258e54afe1e58db3764b0.png`,
+    heading: "final de semana incrível! ε(´｡•᎑•`)っ 💕",
+    subHeading: "Escolha as atrações do nosso",
+    btnText: "Explorar",
     btnLink: "/",
   },
-  {
-    image: imageRightPng,
-    heading: "Exclusive collection for everyone",
-    subHeading: "In this season, find the best 🔥",
-    btnText: "Explore now",
-    btnLink: "/",
-  },
+  // {
+  //   image: imageRightPng,
+  //   heading: "Exclusive collection for everyone",
+  //   subHeading: "In this season, find the best 🔥",
+  //   btnText: "Explore now",
+  //   btnLink: "/",
+  // },
 ];
