@@ -35,22 +35,10 @@ function PageHome() {
 
       
         <SectionSliderProductCard
-          heading="Best Sellers"
-          subHeading="Best selling of the month"
+          heading="PREFERIDOS"
+          subHeading="O Gabs pensa muito sobre estes daqui"
         />
 
-        <div className="relative py-24 lg:py-32">
-          <BackgroundSection />
-          <div>
-            <Heading rightDescText="From the Ciseco blog">
-              The latest news
-            </Heading>
-            <SectionMagazine5 />
-            <div className="flex mt-16 justify-center">
-              <ButtonSecondary>Show all blog articles</ButtonSecondary>
-            </div>
-          </div>
-        </div>
         <SectionClientSay />
       </div>
     </div>

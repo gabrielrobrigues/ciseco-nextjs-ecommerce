@@ -1,20 +1,19 @@
 export const DEMO_DATA = [
   {
     id: 1,
-    clientName: "Tiana Abie",
+    clientName: "reppiD",
     content:
-      "Great quality products, affordable prices, fast and friendly delivery. I very recommend.",
+      "Haha! Na verdade eu sequer existo, sou um amigo imaginário dele que ele pensa que é real. A mãe dele criou um doido, mas não um infiel, ENTÃO PODE LEVAR, THAY!",
   },
   {
     id: 2,
-    clientName: "Lennie Swiffan",
+    clientName: "Ratinho",
     content:
-      "Great quality products, affordable prices, fast and friendly delivery. I very recommend.",
+      "ESSE MULEQUE É MALUCO! Mas nunca vi ninguém fiel quanto ele. O sonho de toda sogra!",
   },
   {
     id: 3,
-    clientName: "Berta Emili",
-    content:
-      "Great quality products, affordable prices, fast and friendly delivery. I very recommend.",
+    clientName: "Nao é o Gabriel",
+    content: `"Te amo", disse Gabriel em uma entrevista ao G1.`,
   },
 ];

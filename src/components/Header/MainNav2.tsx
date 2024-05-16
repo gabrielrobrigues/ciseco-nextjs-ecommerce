@@ -52,7 +52,8 @@ const MainNav2: FC<MainNav2Props> = ({ className = "" }) => {
         className="flex-1 py-2 text-slate-900 dark:text-slate-100"
         onSubmit={(e) => {
           e.preventDefault();
-          router.push("/search");
+          // @ts-ignore
+          router.push(`https://api.whatsapp.com/send?phone=553181647507&text=Hello Gabs! Eu, a Srta. Fernandes, gostaria de acompanhar em ${JSON.stringify(e.target[0].value)}. Topa?`);
         }}
       >
         <div className="bg-slate-50 dark:bg-slate-800 flex items-center space-x-1.5 px-5 h-full rounded">

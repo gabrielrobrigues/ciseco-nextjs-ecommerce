@@ -27,8 +27,10 @@ const Logo: React.FC<LogoProps> = ({
           className={`block h-8 sm:h-10 w-auto ${
             imgLight ? "dark:hidden" : ""
           }`}
-          src={img}
+          src={`https://p.kindpng.com/picc/s/449-4496936_kerchoo-vroomvroom-lightningmcqueen-me-freetoedit-lightning-mcqueen-meme.png`}
           alt="Logo"
+          width={100}
+          height={100}
           sizes="200px"
           priority
         />

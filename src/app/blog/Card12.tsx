@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import NcImage from "@/shared/NcImage/NcImage";
 import SocialsShare from "@/shared/SocialsShare/SocialsShare";
-import { imgHigtQualitys, _getTitleRd } from "@/contains/fakeData";
+import { _getTitleRd } from "@/contains/fakeData";
 import PostCardMeta from "@/components/PostCardMeta/PostCardMeta";
 import Link from "next/link";
 
@@ -12,7 +12,7 @@ export interface Card12Props {
 const Card12: FC<Card12Props> = ({ className = "h-full" }) => {
   return (
     <div className={`nc-Card12 group relative flex flex-col ${className}`}>
-      <Link
+      {/* <Link
         href={"/blog-single"}
         className="block flex-shrink-0 flex-grow relative w-full h-0 aspect-w-4 aspect-h-3 rounded-3xl overflow-hidden"
       >
@@ -23,7 +23,7 @@ const Card12: FC<Card12Props> = ({ className = "h-full" }) => {
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
         />
-      </Link>
+      </Link> */}
 
       <SocialsShare className="absolute hidden md:grid gap-[5px] right-4 top-4 opacity-0 z-[-1] group-hover:z-10 group-hover:opacity-100 transition-all duration-300" />
 

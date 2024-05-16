@@ -48,8 +48,10 @@ const MainNav2Logged: FC<MainNav2LoggedProps> = () => {
       <form
         className="flex-1 py-2 text-slate-900 dark:text-slate-100"
         onSubmit={(e) => {
+          console.log(`eeee`,e)
           e.preventDefault();
-          router.push("/search");
+          // @ts-ignore
+          router.push(`https://api.whatsapp.com/send?phone=553181647507&text=Hello Gabs! Eu, a Srta. Fernandes, gostaria de acompanhar em ${JSON.stringify(e.target[0].value)}. Topa?`);
           inputRef.current?.blur();
         }}
       >
