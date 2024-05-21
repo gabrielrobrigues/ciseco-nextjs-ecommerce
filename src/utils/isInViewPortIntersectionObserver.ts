@@ -36,7 +36,7 @@ const checkInViewIntersectionObserver = ({
     return;
   }
 
-  const observer = NovidadetersectionObserver(_funCallback, options);
+  const observer = new IntersectionObserver(_funCallback, options);
   target && observer.observe(target);
 };
 
