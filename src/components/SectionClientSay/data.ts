@@ -13,7 +13,7 @@ export const DEMO_DATA = [
   },
   {
     id: 3,
-    clientName: "Nao é o Gabriel",
+    clientName: "Obviamente não foi Gabriel quem escreveu esta citação.",
     content: `"Te amo, Thay", disse Gabriel em uma entrevista ao G1.`,
   },
 ];
