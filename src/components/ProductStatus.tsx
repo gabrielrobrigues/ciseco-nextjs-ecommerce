@@ -21,7 +21,7 @@ const ProductStatus: FC<Props> = ({
       return null;
     }
     const CLASSES = `nc-shadow-lg rounded-full flex items-center justify-center ${className}`;
-    if (status === "New in") {
+    if (status === "Novidade") {
       return (
         <div className={CLASSES}>
           <SparklesIcon className="w-3.5 h-3.5" />

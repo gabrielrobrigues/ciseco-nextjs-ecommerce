@@ -32,6 +32,7 @@ const ProductCard: FC<ProductCardProps> = ({
   const {
     name,
     price,
+    link,
     description,
     sizes,
     variants,
@@ -61,9 +62,7 @@ const ProductCard: FC<ProductCardProps> = ({
           leaveFrom="opacity-100 translate-x-0"
           leaveTo="opacity-0 translate-x-20"
         >
-          <p className="block text-base font-semibold leading-none">
-            Added to cart!
-          </p>
+          <p className="block text-base font-semibold leading-none">Anotado!</p>
           <div className="border-t border-slate-200 dark:border-slate-700 my-4" />
           {renderProductCartOnNotify({ size })}
         </Transition>
@@ -94,32 +93,12 @@ const ProductCard: FC<ProductCardProps> = ({
             <div className="flex justify-between ">
               <div>
                 <h3 className="text-base font-medium ">{name}</h3>
-                <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-                  <span>
-                    {variants ? variants[variantActive].name : `Natural`}
-                  </span>
-                  <span className="mx-2 border-s border-slate-200 dark:border-slate-700 h-4"></span>
-                  <span>{size || "XL"}</span>
-                </p>
               </div>
               <Prices price={price} className="mt-0.5" />
             </div>
           </div>
           <div className="flex flex-1 items-end justify-between text-sm">
-            <p className="text-gray-500 dark:text-slate-400">Qty 1</p>
-
-            <div className="flex">
-              <button
-                type="button"
-                className="font-medium text-primary-6000 dark:text-primary-500 "
-                onClick={(e) => {
-                  e.preventDefault();
-                  router.push("/cart");
-                }}
-              >
-                View cart
-              </button>
-            </div>
+            <p className="text-gray-500 dark:text-slate-400">Espero que pague direito,temamo</p>
           </div>
         </div>
       </div>
@@ -222,17 +201,8 @@ const ProductCard: FC<ProductCardProps> = ({
           onClick={() => notifyAddTocart({ size: "XL" })}
         >
           <BagIcon className="w-3.5 h-3.5 mb-0.5" />
-          <span className="ms-1">Add to bag</span>
+          <span className="ms-1">Adicionar a lista</span>
         </ButtonPrimary>
-        <ButtonSecondary
-          className="ms-1.5 bg-white hover:!bg-gray-100 hover:text-slate-900 transition-colors shadow-lg"
-          fontSize="text-xs"
-          sizeClass="py-2 px-4"
-          onClick={() => setShowModalQuickView(true)}
-        >
-          <ArrowsPointingOutIcon className="w-3.5 h-3.5" />
-          <span className="ms-1">Quick view</span>
-        </ButtonSecondary>
       </div>
     );
   };
@@ -248,7 +218,7 @@ const ProductCard: FC<ProductCardProps> = ({
           return (
             <div
               key={index}
-              className="nc-shadow-lg w-10 h-10 rounded-xl bg-white hover:bg-slate-900 hover:text-white transition-colors cursor-pointer flex items-center justify-center uppercase font-semibold tracking-tight text-sm text-slate-900"
+              className="nc-shadow-lg w-14 h-10 rounded-xl bg-white hover:bg-slate-900 hover:text-white transition-colors cursor-pointer flex items-center justify-center uppercase font-semibold tracking-tight text-sm text-slate-900"
               onClick={() => notifyAddTocart({ size })}
             >
               {size}
@@ -264,10 +234,11 @@ const ProductCard: FC<ProductCardProps> = ({
       <div
         className={`nc-ProductCard relative flex flex-col bg-transparent ${className}`}
       >
-        <Link href={"/product-detail"} className="absolute inset-0"></Link>
-
+        {/* @ts-ignore */}
+        <Link href={`${link}`} className="absolute inset-0"></Link>
         <div className="relative flex-shrink-0 bg-slate-50 dark:bg-slate-300 rounded-3xl overflow-hidden z-1 group">
-          <Link href={"/product-detail"} className="block">
+        {/* @ts-ignore */}
+          <Link href={`${link}`} className="block">
             <NcImage
               containerClassName="flex aspect-w-11 aspect-h-12 w-full h-0"
               src={image}
@@ -281,7 +252,6 @@ const ProductCard: FC<ProductCardProps> = ({
           <LikeButton liked={isLiked} className="absolute top-3 end-3 z-10" />
           {sizes ? renderSizeList() : renderGroupButtons()}
         </div>
-
         <div className="space-y-4 px-2.5 pt-5 pb-2.5">
           {renderVariants()}
           <div>
@@ -298,7 +268,7 @@ const ProductCard: FC<ProductCardProps> = ({
             <div className="flex items-center mb-0.5">
               <StarIcon className="w-5 h-5 pb-[1px] text-amber-400" />
               <span className="text-sm ms-1 text-slate-500 dark:text-slate-400">
-                {rating || ""} ({numberOfReviews || 0} reviews)
+                {rating || ""} (indicado)
               </span>
             </div>
           </div>

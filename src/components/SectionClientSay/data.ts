@@ -14,6 +14,6 @@ export const DEMO_DATA = [
   {
     id: 3,
     clientName: "Nao é o Gabriel",
-    content: `"Te amo", disse Gabriel em uma entrevista ao G1.`,
+    content: `"Te amo, Thay", disse Gabriel em uma entrevista ao G1.`,
   },
 ];
