@@ -38,7 +38,7 @@ export interface Product {
   variantType?: "color" | "image";
   sizes?: string[];
   allOfSizes?: string[];
-  status?: "Novidade" | "limited edition" | "Sold Out" | "50% Discount";
+  status?: "Novidade" | "Edição limitada" | "Sold Out" | "50% Discount";
   rating?: string;
   numberOfReviews?: number;
 }
@@ -255,7 +255,7 @@ export const SPORT_PRODUCTS: Product[] = [
     category: "Category 1",
     tags: ["tag1", "tag2"],
     link: `https://api.whatsapp.com/send?phone=553191647507&text="Piscininha amorrrr", quando estivermos de boa, talvez até pela noite, vamos uma piscininha para acalmar os nervos??`,
-    status: "limited edition",
+    status: "Edição limitada",
     rating: "4.8",
     numberOfReviews: 98,
   },
@@ -346,7 +346,7 @@ export const SPORT_PRODUCTS: Product[] = [
     sizes: ["XS", "S", "M", "L", "XL"],
     allOfSizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
     link: "/product-detail/",
-    status: "limited edition",
+    status: "Edição limitada",
     rating: "4.9",
     numberOfReviews: 98,
   },

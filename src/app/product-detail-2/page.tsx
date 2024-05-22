@@ -218,7 +218,7 @@ const ProductDetailPage2 = ({}) => {
         </div>
       );
     }
-    if (status === "limited edition") {
+    if (status === "Edição limitada") {
       return (
         <div className={CLASSES}>
           <ClockIcon className="w-3.5 h-3.5" />

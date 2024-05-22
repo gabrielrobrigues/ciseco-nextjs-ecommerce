@@ -76,7 +76,7 @@ const MainNav2Logged: FC<MainNav2LoggedProps> = () => {
   const renderContent = () => {
     return (
       <div className="h-20 flex justify-between">
-        <div className="flex items-center lg:hidden flex-1">
+        <div className="flex items-center lg:hidden flex-1 opacity-0 select-none cursor-none pointer-events-none">
           <MenuBar />
         </div>
 
@@ -98,7 +98,6 @@ const MainNav2Logged: FC<MainNav2LoggedProps> = () => {
             </button>
           )}
           <AvatarDropdown />
-          <CartDropdown />
         </div>
       </div>
     );
