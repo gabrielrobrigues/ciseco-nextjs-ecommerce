@@ -32,13 +32,6 @@ function PageHome() {
             PRODUCTS[6],
           ]}
         />
-
-      
-        <SectionSliderProductCard
-          heading="PREFERIDOS"
-          subHeading="O Gabs pensa muito sobre estes daqui"
-        />
-
         <SectionClientSay />
       </div>
     </div>

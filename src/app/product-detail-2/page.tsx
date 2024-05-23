@@ -194,7 +194,7 @@ const ProductDetailPage2 = ({}) => {
     }
     const CLASSES =
       "text-sm flex items-center text-slate-700 text-slate-900 dark:text-slate-300";
-    if (status === "New in") {
+    if (status === "Novidade") {
       return (
         <div className={CLASSES}>
           <SparklesIcon className="w-3.5 h-3.5" />
@@ -218,7 +218,7 @@ const ProductDetailPage2 = ({}) => {
         </div>
       );
     }
-    if (status === "limited edition") {
+    if (status === "Edição limitada") {
       return (
         <div className={CLASSES}>
           <ClockIcon className="w-3.5 h-3.5" />

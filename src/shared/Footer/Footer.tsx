@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
     <div className="nc-Footer relative py-10 border-t border-neutral-200 dark:border-neutral-700">
       <div className="container">
         <div className="grid">
-          © 2024 - Feito pelo próprio. Com amor, Gabs. ❤️ 
+          © 2024 - Traços do próprio. Com amor, Gabs. ❤️
         </div>
       </div>
     </div>
